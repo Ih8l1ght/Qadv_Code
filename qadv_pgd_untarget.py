@@ -547,7 +547,7 @@ for model_type, lr, lam, target_mode in product(model_types, lrs, lambdas, targe
         #     best_min_acc = current_min_acc
         #     save_checkpoint(checkpoint_state, checkpoint_dir, 'best_model.pth') 
 
-        if epoch > (warmup_epochs + 1):
+        if epoch > (warmup_epochs + 0):
             save_checkpoint(checkpoint_state, checkpoint_dir, f"epoch_{epoch}_model.pth")
 
         #Clean conf matrix
